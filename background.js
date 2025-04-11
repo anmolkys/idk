@@ -34,7 +34,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     
     // Check if the monitored value exceeds the threshold (e.g., > 5)
     if (data.value > 5) {
-      sendPushoverNotification(data);
+      console.log(`${data.value} is above 5 , send email`)
     }
   }
 });
