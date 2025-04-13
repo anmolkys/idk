@@ -70,6 +70,8 @@ function initMutationObserver() {
 
 // Run the observer and process the initial value once the page loads.
 window.addEventListener("load", () => {
-  initMutationObserver();
-  processValue();
+  setTimeout(()=>{
+    initMutationObserver();
+    processValue();
+  },5000);
 });
